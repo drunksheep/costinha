@@ -201,6 +201,12 @@ a:active {
   font-weight: 'normal';
   font-style: normal;
 }
+@font-face {
+  font-family: 'Aleo Bold';
+  src: url("../fonts/Aleo-Bold.otf") format('opentype');
+  font-weight: 'normal';
+  font-style: normal;
+}
 .slick-list,
 .slick-slider,
 .slick-track {
@@ -337,7 +343,7 @@ a:active {
 }
 @media screen and (max-width: 997px) {
   .map-background {
-    background-image: url("../images/map.jpg");
+    background-image: url("../images/mapmobile.jpg");
     background-position: center bottom;
     background-size: 100% 50%;
     background-repeat: no-repeat;
@@ -382,10 +388,102 @@ a:active {
     background-size: 60% 100%;
     padding-top: 6.4rem;
     padding-bottom: 13.5rem;
+    position: relative;
   }
 }
 .map-background b {
   font-family: 'Aleo Bold Italic';
+}
+.map-background .pin {
+  position: absolute;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+@media screen and (max-width: 997px) {
+  .map-background .pin {
+    display: none;
+  }
+}
+.map-background .pin:hover {
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.map-background .pin:hover .city-name {
+  color: #000;
+}
+.map-background .pin.sp {
+  right: 33rem;
+  top: 19.7rem;
+}
+@media screen and (min-width: 998px) and (max-width: 1279px) {
+  .map-background .pin.sp {
+    right: 25.5rem;
+    top: 19.7rem;
+  }
+}
+.map-background .pin.sp .city-name {
+  -moz-transform: translate(0.45rem, 0.75rem);
+  -o-transform: translate(0.45rem, 0.75rem);
+  -ms-transform: translate(0.45rem, 0.75rem);
+  -webkit-transform: translate(0.45rem, 0.75rem);
+  transform: translate(0.45rem, 0.75rem);
+}
+.map-background .pin.rj {
+  right: 36.5rem;
+  top: 20.8rem;
+}
+@media screen and (min-width: 998px) and (max-width: 1279px) {
+  .map-background .pin.rj {
+    right: 28.7rem;
+    top: 20.8rem;
+  }
+}
+.map-background .pin.rj .city-name {
+  -moz-transform: translate(-10rem, 0.7rem);
+  -o-transform: translate(-10rem, 0.7rem);
+  -ms-transform: translate(-10rem, 0.7rem);
+  -webkit-transform: translate(-10rem, 0.7rem);
+  transform: translate(-10rem, 0.7rem);
+  text-align: right;
+}
+.map-background .pin.miami {
+  top: 9.3rem;
+  right: 45.7rem;
+}
+@media screen and (min-width: 998px) and (max-width: 1279px) {
+  .map-background .pin.miami {
+    right: 36.7rem;
+  }
+}
+.map-background .pin.miami .city-name {
+  -moz-transform: translate(0.2rem, 1.2rem);
+  -o-transform: translate(0.2rem, 1.2rem);
+  -ms-transform: translate(0.2rem, 1.2rem);
+  -webkit-transform: translate(0.2rem, 1.2rem);
+  transform: translate(0.2rem, 1.2rem);
+}
+.map-background .pin.bogota {
+  top: 16.3rem;
+  right: 42rem;
+}
+@media screen and (min-width: 998px) and (max-width: 1279px) {
+  .map-background .pin.bogota {
+    right: 33rem;
+  }
+}
+.map-background .city-name {
+  font-family: 'Aleo Bold';
+  font-size: 1.28rem;
+  color: #6c6b6b;
+  display: inline-block;
+  vertical-align: top;
 }
 .city-background {
   background: url("../images/city.jpg") no-repeat center center/cover;
