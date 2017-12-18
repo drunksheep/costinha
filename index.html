@@ -14,7 +14,7 @@
 			<p class="section-text">
 				Estamos instalados em locais estratégicos para acompanhamento privilegiado do mundo político e do ambiente de negócios. 
 			</p>
-			<a class="pin sp" data-text="A abertura de um escritório da Prospectiva em São Paulo acompanha o crescimento econômico, o amadurecimento institucional e as recente reformas nas políticas públicas da Colômbia. Na capital colombiana, oferecemos para clientes internacionais e locais uma gama completa de serviços de políticas públicas e relações institucionais, sempre seguindo os mais altos padrões de compliance.">
+			<a class="pin sp" data-text="A abertura de um escritório da Prospectiva em São Paulo acompanha o crescimento econômico, o amadurecimento institucional e as recente reformas nas políticas públicas da Colômbia. Na capital colombiana, oferecemos para clientes internacionais e locais uma gama completa de serviços de políticas públicas e relações institucionais, sempre seguindo os mais altos padrões de compliance." data-title="São Paulo">
 				<img src="images/pinsp.png" alt="Marcador do mapa - São Paulo">
 				<span class="city-name">
 					SÃO PAULO
@@ -61,6 +61,8 @@
 
 	function handleTextChange() {
 		var textValue = this.dataset.text; 
+		var titleValue = this.dataset.title; 
+		document.querySelector('.section-title.white').innerHTML = titleValue; 
 		document.querySelector('.topborder').innerHTML = textValue; 
 		// console.log(textValue);
 	}
