@@ -14,13 +14,13 @@
 			<p class="section-text">
 				Estamos instalados em locais estratégicos para acompanhamento privilegiado do mundo político e do ambiente de negócios. 
 			</p>
-			<a class="pin sp">
+			<a class="pin sp" data-text="A abertura de um escritório da Prospectiva em São Paulo acompanha o crescimento econômico, o amadurecimento institucional e as recente reformas nas políticas públicas da Colômbia. Na capital colombiana, oferecemos para clientes internacionais e locais uma gama completa de serviços de políticas públicas e relações institucionais, sempre seguindo os mais altos padrões de compliance.">
 				<img src="images/pinsp.png" alt="Marcador do mapa - São Paulo">
 				<span class="city-name">
 					SÃO PAULO
 				</span>
 			</a>
-			<a class="pin rj">
+			<a class="pin rj" data-text="A abertura de um escritório da Prospectiva no RJ acompanha o crescimento econômico, o amadurecimento institucional e as recente reformas nas políticas públicas da Colômbia. Na capital colombiana, oferecemos para clientes internacionais e locais uma gama completa de serviços de políticas públicas e relações institucionais, sempre seguindo os mais altos padrões de compliance.">
 				<img src="images/pingeneric.png" alt="Marcador do mapa - Rio de Janeiro">
 				<span class="city-name">
 					RIO DE <br> JANEIRO
@@ -52,4 +52,17 @@
 	</section>
 </main>
 </body>
+<script>
+	var pins = document.querySelectorAll('.pin');
+
+	for (i = 0; i < pins.length; i++) {
+		pins[i].addEventListener('click', handleTextChange)
+	}
+
+	function handleTextChange() {
+		var textValue = this.dataset.text; 
+		document.querySelector('.topborder').innerHTML = textValue; 
+		// console.log(textValue);
+	}
+</script>
 </html>
