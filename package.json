@@ -1,0 +1,24 @@
+{
+  "name": "personal-boilerplate",
+  "version": "1.2.0",
+  "description": "Basic boilerplate for Stylus and postCSS everyday work",
+  "main": "\u001b[C",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "André Facchini - https://github.com/drunksheep/",
+  "license": "ISC",
+  "homepage": "https://github.com/drunksheep/personal-boilerplate",
+  "dependencies": {
+    "autoprefixer": "^6.5.2",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.8.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-stylus": "^2.4.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

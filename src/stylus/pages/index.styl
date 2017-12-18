@@ -1,0 +1,104 @@
+.map-background
+	background-color $gray
+	
+	@media $tablet-max 
+		background-image url('../images/map.jpg')
+		background-position center bottom 
+		background-size 100% 50%
+		background-repeat no-repeat
+		padding-top 10rem 
+		padding-bottom 50rem
+		text-align center
+		
+	.section-title
+		font-size 2.425rem 
+		color #000
+		margin-bottom 3rem 
+		font-family $ai
+		
+		@media $small-desktop-min
+			margin-left 2.6rem
+		
+	.section-text 
+		font-size 2.003rem 
+		font-family $r
+		
+		@media $small-desktop-min
+			margin-left 2.6rem
+			max-width 33.6rem 
+		
+		@media $tablet-max
+			margin auto
+			width 100%
+		
+	.center-content
+		@media $small-desktop-min
+			background-image url('../images/map.jpg')
+			background-size contain 
+			background-repeat no-repeat
+			background-position center right 
+			background-size 60% 100%
+			padding-top 6.4rem
+			padding-bottom 13.5rem 
+			
+	b 
+		font-family $abi 
+			
+.city-background
+	background url('../images/city.jpg') no-repeat center center / cover 
+	min-height 27.8rem 
+	text-align center
+	position relative
+	
+	@media $tablet-max
+		padding-top 10rem 
+		padding-bottom 10rem
+	
+	&:before, &:after
+		content ''
+		display block
+		position absolute
+		right 0 
+		left 0 
+		margin auto
+	
+	&:before
+		width 27rem
+		background-color $red 
+		top -.3rem
+		height 1.4rem
+		z-index 3
+		
+	&:after
+		height 100%
+		width 100%
+		background-color rgba(#000, 0.67)
+		top 0
+	
+	@media $small-desktop-min
+		padding-top 3rem 
+		
+	.center-content 
+		position relative 
+		z-index 2
+		
+	.section-title
+		color #FFF 
+		font-size 3.172rem
+		margin-bottom 3.6rem 
+		font-family $a 
+		
+	.section-text
+		font-size 1.611rem
+		color #FFF 
+		margin auto
+		font-family $r
+		line-height 2.228rem
+		
+		@media $small-desktop-min
+			width 53rem
+		
+
+		
+
+	
